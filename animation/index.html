@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin:0px;
+            height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items: center;
+            background-color: aquamarine;
+        }
+        .container{
+             height:300px;
+             width:300px;
+             border:2px solid rgb(13, 17, 6);
+             animation: orbit 1s linear infinite normal ;
+             border-radius: 50%;
+
+        }
+        .box{
+            height:100px;
+            width:100px;
+            animation-name:orbit;
+            animation-duration: 1s;
+            background-color: white;
+            border-radius: 50%;
+
+        }
+        @keyframes circle{
+            0%{
+                transform: translate(0,0);
+            }
+            25%{
+                transform: translate(200px,0);
+            }
+            50%{
+                transform: translate(200px,200px);
+            }
+            75%{
+                transform: translate(0,200px)
+            }
+        }
+        @keyframes orbit{
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+</html>

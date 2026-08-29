@@ -1,0 +1,14 @@
+body{
+    background-color: red;
+}
+@media screen and (max-width: 760px) {
+    body{
+        background-color: black;
+    }  
+} 
+@media screen and (max-width: 400px) {
+    body{
+        background-color: aquamarine;
+    }
+    
+}
